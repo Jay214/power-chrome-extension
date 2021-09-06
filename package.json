@@ -4,12 +4,13 @@
   "scripts": {
     "build:watch": "vite build --watch",
     "dev": "vite",
-    "build": "vue-tsc --noEmit && vite build",
+    "build": "vite build",
     "serve": "vite preview"
   },
   "dependencies": {
     "@element-plus/icons": "^0.0.11",
     "element-plus": "^1.1.0-beta.8",
+    "rollup-plugin-copy": "^3.4.0",
     "vue": "^3.2.6",
     "vue-router": "^4.0.11"
   },
