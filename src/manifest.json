@@ -31,10 +31,13 @@
     "permissions": [
         "webRequest",
         "storage",
-        "webRequestBlocking",
-        "browsingData",
-        "<all_urls>"
+        "declarativeNetRequest",
+        "browsingData"
     ],
+    "host_permissions": [
+        "http://www.blogger.com/",
+        "*://*/*"
+      ],
     "web_accessible_resources": [
         {
             "resources": [
