@@ -32,12 +32,20 @@
         "webRequest",
         "storage",
         "declarativeNetRequest",
+        "declarativeNetRequestFeedback",
         "browsingData"
     ],
     "host_permissions": [
         "http://www.blogger.com/",
         "*://*/*"
       ],
+      "declarative_net_request" : {
+        "rule_resources" : [{
+          "id": "ruleset_1",
+          "enabled": true,
+          "path": "rules.json"
+        }]
+      },
     "web_accessible_resources": [
         {
             "resources": [
