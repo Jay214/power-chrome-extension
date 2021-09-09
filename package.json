@@ -1,21 +1,25 @@
 {
-  "name": "pow-chrome-extansion",
+  "name": "power-chrome-extansion",
   "version": "0.0.0",
   "scripts": {
     "build:watch": "vite build --watch",
     "dev": "vite",
     "build": "vite build",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "build:inject": "vite build -c vite.inject.config.js"
   },
   "dependencies": {
     "@element-plus/icons": "^0.0.11",
     "@types/chrome": "^0.0.155",
+    "ajax-hook": "^2.0.3",
     "element-plus": "^1.1.0-beta.8",
+    "lodash": "^4.17.21",
     "rollup-plugin-copy": "^3.4.0",
     "vue": "^3.2.6",
     "vue-router": "^4.0.11"
   },
   "devDependencies": {
+    "@types/lodash": "^4.14.172",
     "@types/node": "^16.7.10",
     "@vitejs/plugin-vue": "^1.6.0",
     "@vue/compiler-sfc": "^3.0.5",

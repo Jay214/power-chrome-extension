@@ -13,7 +13,6 @@ export default defineConfig({
   },
   build: {
     rollupOptions: {
-      // input: "src/manifest.json"
       input: {
         popup: resolve(__dirname, "src/popup/index.html"),
         background: resolve(__dirname, "src/background.ts"),
@@ -21,6 +20,7 @@ export default defineConfig({
           __dirname,
           "src/content-scripts/content-script.ts"
         ),
+        "inject-script": resolve(__dirname, "src/content-scripts/inject-script.ts")
       },
       output: {
         entryFileNames: "[name].js",

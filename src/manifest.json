@@ -1,5 +1,5 @@
 {
-    "name": "chrome-extension",
+    "name": "power-extension",
     "version": "2.0",
     "manifest_version": 3,
     "background": {
@@ -49,7 +49,8 @@
     "web_accessible_resources": [
         {
             "resources": [
-                "assets/icons/icon16.png"
+                "assets/*",
+                "inject-script.js"
             ],
             "matches": [
                 "<all_urls>"
