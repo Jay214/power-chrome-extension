@@ -1,6 +1,14 @@
-import { updateDynamicRules, isIllegalUrl } from './popup/utils/use-request-manage'
-import { UrlItem } from './popup/utils/types'
-console.log("This message is sent from background script.");
+import { updateDynamicRules } from './popup/utils/use-request-manage'
+// import { UrlItem } from './types'
+// import { isIllegalUrl } from './utils/index'
+// console.log("This message is sent from background script.");
+export interface UrlItem {
+  origin: string
+  target: string
+}
+export const isIllegalUrl = (url: string) => {
+  return url && typeof url === 'string'
+}
 
 chrome.runtime.onConnect.addListener(port => {
   port.onMessage.addListener((urls: UrlItem[]) => {
